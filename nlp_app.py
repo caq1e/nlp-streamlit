@@ -33,7 +33,8 @@ def button_click():
   analyze_text(lemmatized)
 
 st.title("Sentiment Analysis")
-input_text = st.text_area(label="Input text to be analyzed here.", height="content")
+input_text = st.text_area(label="Input text to be analyzed here.")
 button = st.button(label="Analyze")
+
 
 if button: button_click()
