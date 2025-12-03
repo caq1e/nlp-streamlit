@@ -32,10 +32,13 @@ def button_click():
   lemmatized = prepare_text(input_text)
   analyze_text(lemmatized)
 
+nltk.download('wordnet')
+
 st.title("Sentiment Analysis")
 input_text = st.text_area(label="Input text to be analyzed here.", height=None)
 button = st.button(label="Analyze")
 
 
 if button: button_click()
+
 
